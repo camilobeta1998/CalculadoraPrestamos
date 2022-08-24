@@ -1,5 +1,26 @@
+class Usuario {
+  constructor(
+    nombre,
+    apellido,
+    correo,
+    monto_prestamo,
+    interes_mensual,
+    meses,
+    pago_mensual
+  ) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.correo = correo;
+    this.monto_prestamo = monto_prestamo;
+    this.interes_mensual = interes_mensual;
+    this.meses = meses;
+    this.pago_mensual = pago_mensual;
+  }
+}
+
 function calcular_prestamo() {
   let x = 1;
+  let array = [];
   while (x == 1) {
     let nombre = prompt("Ingrese su nombre: ");
     let apellido = prompt("Ingrese su apellido: ");
@@ -23,10 +44,22 @@ function calcular_prestamo() {
       nombre,
       " ",
       apellido,
-      "pagará mensualmente:",
+      "pagar mensualmente:",
       pago_mensual,
       " pesos"
     );
+
+    let usuario = new Usuario(
+      nombre,
+      apellido,
+      correo,
+      monto_prestamo,
+      interes_mensual,
+      meses,
+      pago_mensual
+    );
+
+    array.push(usuario);
 
     x = parseInt(
       prompt(
@@ -34,6 +67,7 @@ function calcular_prestamo() {
       )
     );
   }
+  console.log(array);
 }
 
 calcular_prestamo();
