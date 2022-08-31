@@ -50,39 +50,6 @@ function calcular_prestamo() {
       pago_mensual,
       " pesos"
     );
-
-    /**Aqui utilizare DOM para mostrar en pantalla los usuarios registrados**/
-
-    let section_cuatro = document.getElementById("sectionCuatro");
-
-    //Aqui se mostrara en el DOM el nombre de los usuarios
-    let nombre_en_html = document.createElement("p");
-    nombre_en_html.innerText = "El nombre del usuario es: " + nombre;
-    section_cuatro.append(nombre_en_html);
-
-    //Aqui se mostrara en el DOM el apellido de los usuarios
-    let apellido_en_html = document.createElement("p");
-    apellido_en_html.innerText = "El apellido del usuario es: " + apellido;
-    section_cuatro.append(apellido_en_html);
-
-    //aqui se mostrara en el DOM el correo electronico de los usuarios:
-    let correo_en_html = document.createElement("p");
-    correo_en_html.innerText =
-      "El correo electronico  del usuario es: " + correo;
-    section_cuatro.append(correo_en_html);
-
-    // aqui se mostrara el valor a pagar en el DOM:
-    let pago_mensual_en_html = document.createElement("p");
-    pago_mensual_en_html.innerText =
-      "El valor del pago mensual es: " + pago_mensual;
-    section_cuatro.append(pago_mensual_en_html);
-
-    //Separador
-    let separador_en_html = document.createElement("p");
-    separador_en_html.innerText =
-      "--------------------------------------------------------------------------------------------------";
-    section_cuatro.append(separador_en_html);
-
     //creo el objeto usuario usando la clase Usuario
     let usuario = new Usuario(
       nombre,
