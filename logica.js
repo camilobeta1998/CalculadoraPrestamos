@@ -63,38 +63,6 @@ function calcular_prestamo() {
     e.preventDefault();
     formulario.reset();
   }
-
-  /*
-  // y es la variable para saber si el ciclo se continua repitiendo
-  y = parseInt(
-    prompt(
-      "Ingrese el numero 1 si  quiere  buscar a alguien en la base de datos, ingrese otro numero si quiere salir: "
-    )
-  );
-  while (y == 1) {
-    let nombre_busqueda = prompt(
-      "Ingrese el nombre que quiere buscar dentro de la base de datos: "
-    );
-    let busqueda = calcular.filter(function (usuario) {
-      if (usuario.nombre == nombre_busqueda) {
-        return true;
-      } else {
-        console.log("Este usuario NO esta en la base de datos");
-      }
-    });
-    console.log(
-      "Los valores obtenidos para:  ",
-      nombre_busqueda,
-      " son: ",
-      busqueda
-    );
-    y = parseInt(
-      prompt(
-        "Ingrese el numero 1 si  quiere volver a buscar a alguien en la base de datos, ingrese otro numero si quiere salir: "
-      )
-    );
-  }
-  */
 }
 
 calcular_prestamo();
