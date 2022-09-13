@@ -2,91 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Calculadora de prestamos</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Calculadora de prestamos</title>
 </head>
 
 <body>
-    <!--El metodo main contendra todo lo de la pagina-->
-    <main>
-        <!--Inicio header-->
-        <header>
-            <!--Inicio Zona Navegable de nuestra pagina-->
-            <nav>
-                <ul>
-                    <li><a href="index.html">inicio</a></li>
-                </ul>
-                <ul>
-                    <li><a href="index.html">Solicita tu prestamo</a></li>
-                </ul>
-                <ul>
-                    <li><a href="index.html">Testimonios</a></li>
-                </ul>
-            </nav>
-            <!--Fin Zonna navegable-->
-        </header>
-        <!--Fin header-->
+        <!--El metodo main contendra todo lo de la pagina-->
+        <main class="grid-container">
+                <!--Inicio header-->
+                <header>
+                        <!--Inicio Zona Navegable de nuestra pagina-->
+                        <nav>
+                                <ul>
+                                        <li><a href="index.html">inicio</a></li>
+                                </ul>
+                                <ul>
+                                        <li><a href="index.html">Solicita tu prestamo</a></li>
+                                </ul>
+                                <ul>
+                                        <li><a href="index.html">Testimonios</a></li>
+                                </ul>
+                        </nav>
+                        <!--Fin Zonna navegable-->
+                </header>
+                <!--Fin header-->
 
-        <!--Inicio sectionUno del index-->
-        <section class="sectionUno">
-            <img src="multimedia/images/billetebanner.jpg" alt="Imagen banco">
-            <p>Rápido, seguro, online!</p>
-            <p>Tu prestamo en un click.</p>
-        </section>
-        <!--Fin sectionUno del index-->
+                <!--Inicio sectionUno del index-->
+                <section class="sectionUno">
+                        <div>
+                                <img src="multimedia/images/billetebanner.jpg" alt="Imagen banco">
+                                <p class="rapido">Rápido, seguro, online!</p>
+                                <p class="tu_prestamo">Tu prestamo en un click.</p>
+                        </div>
+                </section>
+                <!--Fin sectionUno del index-->
 
-        <!--Inicio sectionDos del index-->
-        <section class="sectionDos">
+                <!--Inicio sectionDos del index-->
+                <section class="sectionDos">
 
-            <!--Aqui ira un carrusel-->
+                        <!--Aqui ira un carrusel-->
 
-            <!--Fin carrusel-->
+                        <!--Fin carrusel-->
 
-        </section>
-        <!--Fin sectionDos del index-->
+                </section>
+                <!--Fin sectionDos del index-->
 
-        <!--Inicio sectionTres del index-->
-        <section id="sectionTres">
-            <form action="" id="formulario">
-                <p>Calcula tu prestamo</p>
-                <div>
-                    <input type="text" placeholder="Ingrese su nombre: " id="nombre">
-                </div>
-                <div>
-                    <input type="text" placeholder="Ingrese su Apellido: " id="apellido">
-                </div>
-                <div>
-                    <input type="text" placeholder="Ingrese su Email: " id="email">
-                </div>
-                <div>
-                    <span>$</span>
-                    <input type="text" class="form-control" placeholder="Ingrese tu monto del prestamo: "
-                        id="monto_prestamo">
-                </div>
-                <div>
-                    <span>%</span>
-                    <input type="text" class="form-control" placeholder="Ingrese el porcentaje de interes mensual: "
-                        id="interes_mensual">
-                </div>
-                <div>
-                    <input type="text" placeholder="Ingrese a cuentos meses quieres pagar: " id="meses">
-                </div>
-                <button>Calcular prestamo</button>
-            </form>
-        </section>
+                <!--Inicio sectionTres del index-->
+                <section id="sectionTres">
+                        <div>
+                                <form action="" id="formulario">
+                                        <p>Calcula tu prestamo</p>
+                                        <div>
+                                                <input type="text" placeholder="Ingrese su nombre: " id="nombre">
+                                        </div>
+                                        <div>
+                                                <input type="text" placeholder="Ingrese su Apellido: " id="apellido">
+                                        </div>
+                                        <div>
+                                                <input type="text" placeholder="Ingrese su Email: " id="email">
+                                        </div>
+                                        <div>
+                                                <span>$</span>
+                                                <input type="text" class="form-control"
+                                                        placeholder="Ingrese tu monto del prestamo: "
+                                                        id="monto_prestamo">
+                                        </div>
+                                        <div>
+                                                <span>%</span>
+                                                <input type="text" class="form-control"
+                                                        placeholder="Ingrese el porcentaje de interes mensual: "
+                                                        id="interes_mensual">
+                                        </div>
+                                        <div>
+                                                <input type="text" placeholder="Ingrese a cuentos meses quieres pagar: "
+                                                        id="meses">
+                                        </div>
+                                        <button>Calcular prestamo</button>
+                                </form>
+                        </div>
 
-        <!--Fin sectionTres del index-->
-        <!--Inicio sectionCuatro-->
-        <section id="sectionCuatro">
+                        <div id="contenedor2_sectionTres">
+                        </div>
+                </section>
 
-        </section>
-        <!--Fin sectionCuatro-->
+                <!--Fin sectionTres del index-->
 
-    </main>
-    <script src="logica.js"></script>
+        </main>
+        <script src="logica.js"></script>
 </body>
 
 </html>

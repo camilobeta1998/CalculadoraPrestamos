@@ -21,6 +21,9 @@ class Usuario {
 function calcular_prestamo() {
         let formulario = document.getElementById("formulario");
         let section_tres = document.getElementById("sectionTres");
+        let contenedor2_section_tres = document.getElementById(
+                "contenedor2_sectionTres"
+        );
         let array = [];
         formulario.addEventListener("submit", calcular);
 
@@ -39,6 +42,8 @@ function calcular_prestamo() {
                         (interes_mensual.value * monto_prestamo.value) /
                         (1 - (1 + interes_mensual.value) ** -meses.value);
 
+                contenedor2_section_tres.innerHTML = `<p class="resultado">El monto a pagar este mes es de:  ${pago_mensual}</p>`;
+                /*
                 console.log(
                         "El/la señor@  ",
                         nombre.value,
@@ -48,6 +53,7 @@ function calcular_prestamo() {
                         pago_mensual,
                         " pesos"
                 );
+                */
                 //creo el objeto usuario usando la clase Usuario
                 let usuario = new Usuario(
                         nombre.value,
@@ -60,7 +66,7 @@ function calcular_prestamo() {
                 );
                 //estoy pusheando los objetos al array
                 array.push(usuario);
-                console.log("La base de datos tiene hasta ahora es: ", array);
+                //console.log("La base de datos tiene hasta ahora es: ", array);
 
                 //llamamos la funcion convertir_JSON
 
