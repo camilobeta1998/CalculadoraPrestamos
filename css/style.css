@@ -5,13 +5,13 @@
 
 body .grid-container {
   display: grid;
-  grid-template-rows: 500px 200px 400px;
+  grid-template-rows: 500px 550px;
   grid-template-columns: 100%;
-  grid-template-areas: "sectionUno" "sectionDos" "sectionTres";
+  grid-template-areas: "sectionUno" "sectionTres";
 }
 @media only screen and (min-width: 481px) and (max-width: 960px) {
   body .grid-container {
-    grid-template-rows: 300px 200px 400px;
+    grid-template-rows: 300px 550px;
   }
 }
 body .grid-container header {
@@ -26,21 +26,30 @@ body .grid-container header {
 body .grid-container header nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100%;
   background-color: #008bff;
 }
 body .grid-container header nav ul {
-  margin-left: 5%;
+  margin-left: 10px;
+  position: relative;
+  top: 9px;
 }
 body .grid-container header nav ul li {
   list-style: none;
+  position: relative;
+  right: 15px;
 }
 body .grid-container header nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  body .grid-container header nav ul li a {
+    font-size: 15px;
+  }
 }
 body .grid-container .sectionUno {
   grid-area: sectionUno;
@@ -84,9 +93,26 @@ body .grid-container .sectionUno div .tu_prestamo {
     left: 50px;
   }
 }
+body .grid-container .sectionUno div a {
+  background-color: #008bff;
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  left: 45%;
+  bottom: 125px;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  body .grid-container .sectionUno div a {
+    left: 210px;
+    bottom: 75px;
+  }
+}
 body #sectionTres {
   grid-area: sectionTres;
-  border: solid 2px blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,25 +123,40 @@ body #sectionTres div #formulario {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: solid 2px #008bff;
-  width: 150%;
-  height: 300px;
+  border: solid 2px grey;
+  width: 120%;
+  height: 450px;
   position: relative;
   right: 55px;
   opacity: 0.8;
 }
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  body #sectionTres div #formulario {
+    right: 25px;
+  }
+}
 body #sectionTres div #formulario p {
-  font-size: 25px;
+  font-size: 35px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #008bff;
+  position: relative;
+  top: 12px;
 }
 body #sectionTres div #formulario input {
-  width: 200px;
+  width: 300px;
 }
 body #sectionTres .resultado {
   position: relative;
   top: 15px;
+  right: 20px;
   color: white;
   padding: 15px;
   background-color: #008bff;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  body #sectionTres .resultado {
+    left: 2px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

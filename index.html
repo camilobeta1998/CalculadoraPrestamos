@@ -6,6 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+                crossorigin="anonymous">
         <title>Calculadora de prestamos</title>
 </head>
 
@@ -36,25 +39,17 @@
                                 <img src="multimedia/images/billetebanner.jpg" alt="Imagen banco">
                                 <p class="rapido">Rápido, seguro, online!</p>
                                 <p class="tu_prestamo">Tu prestamo en un click.</p>
+                                <a href="#ir">Calcular</a>
                         </div>
                 </section>
                 <!--Fin sectionUno del index-->
 
-                <!--Inicio sectionDos del index-->
-                <section class="sectionDos">
-
-                        <!--Aqui ira un carrusel-->
-
-                        <!--Fin carrusel-->
-
-                </section>
-                <!--Fin sectionDos del index-->
 
                 <!--Inicio sectionTres del index-->
                 <section id="sectionTres">
                         <div>
                                 <form action="" id="formulario">
-                                        <p>Calcula tu prestamo</p>
+                                        <p id="ir">Calcula tu prestamo</p>
                                         <div>
                                                 <input type="text" placeholder="Ingrese su nombre: " id="nombre">
                                         </div>
@@ -65,13 +60,11 @@
                                                 <input type="text" placeholder="Ingrese su Email: " id="email">
                                         </div>
                                         <div>
-                                                <span>$</span>
                                                 <input type="text" class="form-control"
                                                         placeholder="Ingrese tu monto del prestamo: "
                                                         id="monto_prestamo">
                                         </div>
                                         <div>
-                                                <span>%</span>
                                                 <input type="text" class="form-control"
                                                         placeholder="Ingrese el porcentaje de interes mensual: "
                                                         id="interes_mensual">
@@ -92,6 +85,12 @@
 
         </main>
         <script src="logica.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+                integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
