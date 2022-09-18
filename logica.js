@@ -42,7 +42,7 @@ function calcular_prestamo() {
                         (interes_mensual.value * monto_prestamo.value) /
                         (1 - (1 + interes_mensual.value) ** -meses.value);
 
-                contenedor2_section_tres.innerHTML = `<p class="resultado">El monto a pagar este mes es de:  ${pago_mensual}</p>`;
+                contenedor2_section_tres.innerHTML = `<p class="resultado">${nombre.value} el monto a pagar este mes es de:  ${pago_mensual}</p>`;
                 /*
                 console.log(
                         "El/la señor@  ",
@@ -74,6 +74,16 @@ function calcular_prestamo() {
 
                 e.preventDefault();
                 formulario.reset();
+
+                //codigo de toastify js
+
+                Toastify({
+                        text: "Calculando su prestamo...",
+                        duration: 1500,
+                        style: {
+                                background: " #008bff;",
+                        },
+                }).showToast();
         }
 }
 
