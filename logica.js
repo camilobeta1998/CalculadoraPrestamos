@@ -85,6 +85,17 @@ function calcular_prestamo() {
                         },
                 }).showToast();
         }
+
+        //Usare una api para ver el valor de un peso a dolares
+        let contenedor_ip = document.getElementById("ip");
+        fetch(
+                "https://v6.exchangerate-api.com/v6/bcde7ba544cd43e86a17649e/latest/COP"
+        )
+                .then((response) => response.json())
+                .then((data) => {
+                        console.log("Se uso una api para convetir monedas");
+                        contenedor_ip.innerHTML = `<span class="mensaje_ip">Un peso Colombiano equivale a : ${data.conversion_rates.USD} dólares estadounidenses</span>`;
+                });
 }
 
 calcular_prestamo();

@@ -97,7 +97,7 @@ body{
                                         padding-top: 5px;
                                         padding-bottom: 5px;
                                         position: relative;
-                                        left: 45%;
+                                        left: 47%;
                                         bottom: 125px;
                                         
                                         @media only screen and (min-width: 481px) and (max-width: 960px){
@@ -117,6 +117,14 @@ body{
                 justify-content: center;
                 align-items: center;
 
+                .mensaje_ip{
+                        color: white;
+                        background-color: #008bff;
+                        position: relative;
+                        bottom: 15px;
+                        padding: 5px 15px;
+                }
+
                 div{
                         #formulario{
                                 display: flex;
@@ -127,7 +135,7 @@ body{
                                 width: 120%;
                                 height: 450px;
                                 position: relative;
-                                right: 55px;
+                                right: 35px;
                                 opacity: 0.8;
                                 @media only screen and (min-width: 481px) and (max-width:960px){
                                         right: 25px;
