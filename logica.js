@@ -43,17 +43,7 @@ function calcular_prestamo() {
                         (1 - (1 + interes_mensual.value) ** -meses.value);
 
                 contenedor2_section_tres.innerHTML = `<p class="resultado">${nombre.value} el monto a pagar este mes es de:  ${pago_mensual}</p>`;
-                /*
-                console.log(
-                        "El/la señor@  ",
-                        nombre.value,
-                        " ",
-                        apellido.value,
-                        "pagar mensualmente:",
-                        pago_mensual,
-                        " pesos"
-                );
-                */
+
                 //creo el objeto usuario usando la clase Usuario
                 let usuario = new Usuario(
                         nombre.value,
