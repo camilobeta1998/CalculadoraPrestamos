@@ -93,7 +93,6 @@ function calcular_prestamo() {
         )
                 .then((response) => response.json())
                 .then((data) => {
-                        console.log("Se uso una api para convetir monedas");
                         contenedor_ip.innerHTML = `<span class="mensaje_ip">Un peso Colombiano equivale a : ${data.conversion_rates.USD} dólares estadounidenses</span>`;
                 });
 }
@@ -113,8 +112,4 @@ function convertir_JSON(array) {
 
 function desconvertir_JSON(arreglo_json) {
         let desconvertir = JSON.parse(arreglo_json);
-        console.log(
-                "Se trajo desde del localStorage el JSON desconvertido ",
-                desconvertir
-        );
 }
